@@ -3,6 +3,10 @@
 One-off installation for a new machine (macOS only).
 Once done see `README.md` for the daily dev workflow.
 
+## Minimum system requirements
+
+Apple Silicon M1+ with 16 GB RAM (24 GB+ recommended for local LLM testing).
+
 ## Prerequisites
 
 ### Bun
@@ -11,15 +15,30 @@ t3code uses [Bun](https://bun.sh) as its JavaScript runtime and package manager.
 
 ```bash
 brew install oven-sh/bun/bun
+bun --version   # verify installation
 ```
 
 ### Ollama (optional — for local LLM testing)
 
 ```bash
 brew install ollama
-ollama serve          # start the server (runs on localhost:11434)
-ollama pull llama3.1  # download a model (~4.7 GB)
 ```
+
+Start/stop the Ollama service:
+
+```bash
+brew services start ollama   # start in background
+brew services stop ollama    # stop when done
+```
+
+Pull a model:
+
+```bash
+ollama pull llama3.1      # 8B — ~4.7 GB, runs well on 16 GB RAM
+ollama pull llama3.1:70b  # 70B — ~40 GB, needs 64 GB+ RAM
+```
+
+Visit <http://localhost:11434> to verify Ollama is running (you should see "Ollama is running").
 
 ## Clone and install
 

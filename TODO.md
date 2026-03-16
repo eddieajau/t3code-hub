@@ -6,10 +6,10 @@
 
 Update INSTALL.md so a fresh clone can build and run t3code.
 
-- [ ] Add bun install via Homebrew
-- [ ] Add bun install step for t3code dependencies
-- [ ] Add instructions to install and pull an Ollama model
-- [ ] Verify: fresh terminal, follow INSTALL.md, `bun run typecheck` passes in `../t3code`
+- [x] Add bun install via Homebrew
+- [x] Add bun install step for t3code dependencies
+- [x] Add instructions to install and pull an Ollama model
+- [x] Verify: fresh terminal, follow INSTALL.md, `bun run typecheck` passes in `../t3code`
 
 ### Task 4: Contract changes — extend ProviderKind for Ollama
 
