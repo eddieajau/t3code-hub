@@ -15,12 +15,12 @@ Update INSTALL.md so a fresh clone can build and run t3code.
 
 All code changes on branch `ollama-adapter` (create if not exists) in `../t3code`.
 
-- [ ] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
-- [ ] Add `"ollama"` to `ProviderKind` in `packages/contracts/src/orchestration.ts`
-- [ ] Add `OllamaProviderStartOptions` to `ProviderStartOptions` in `orchestration.ts` and `provider.ts`
-- [ ] Add `ollama` entries to all 5 `Record<ProviderKind, ...>` objects in `model.ts`
-- [ ] Run `bun run typecheck` — passes (expect errors in server code until adapter exists — contracts package itself must be clean)
-- [ ] Run `bun run test` — no new failures compared to baseline
+- [x] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
+- [x] Add `"ollama"` to `ProviderKind` in `packages/contracts/src/orchestration.ts`
+- [x] Add `OllamaProviderStartOptions` to `ProviderStartOptions` in `orchestration.ts` and `provider.ts`
+- [x] Add `ollama` entries to all 5 `Record<ProviderKind, ...>` objects in `model.ts`
+- [x] Run `bun run typecheck` — passes (expect errors in server code until adapter exists — contracts package itself must be clean)
+- [x] Run `bun run test` — no new failures compared to baseline
 
 ### Task 5: OllamaAdapter service definition
 
