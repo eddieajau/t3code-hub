@@ -11,9 +11,14 @@ Archive completed tasks from TODO.md into HISTORY.md.
 
 3. If no tasks are fully complete, report that and stop.
 
-4. For each completed task, append an entry to `HISTORY.md` in the format:
+4. For each completed task, append to `HISTORY.md` grouped by date:
+   - If a `## YYYY-MM-DD` heading for today already exists, add bullet points under it.
+   - Otherwise, append a new date heading first.
    ```
-   ## YYYY-MM-DD — Task N: <title>
+   ## YYYY-MM-DD
+
+   - Task N: <title>
+   - Task N: <title>
    ```
    Use today's date. Keep entries in chronological order (append at end).
 
