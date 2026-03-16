@@ -43,13 +43,13 @@ Implement startSession, stopSession, listSessions, hasSession, stopAll. No sendT
 
 ### Task 7: Wire OllamaAdapter into the server
 
-- [ ] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
-- [ ] Add `ollamaBaseUrl` to `ServerConfigShape` in `config.ts`
-- [ ] Read `T3CODE_OLLAMA_BASE_URL` env var in `main.ts` (default `http://localhost:11434`)
-- [ ] Import and provide `OllamaAdapter` in `ProviderAdapterRegistry.ts`
-- [ ] Create `ollamaAdapterLayer` in `serverLayers.ts` and provide alongside codex
-- [ ] Run `bun run typecheck` — passes
-- [ ] Run `bun run test` — no new failures compared to baseline
+- [x] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
+- [x] Add `ollamaBaseUrl` to `ServerConfigShape` in `config.ts`
+- [x] Read `T3CODE_OLLAMA_BASE_URL` env var in `main.ts` (default `http://localhost:11434`)
+- [x] Import and provide `OllamaAdapter` in `ProviderAdapterRegistry.ts`
+- [x] Create `ollamaAdapterLayer` in `serverLayers.ts` and provide alongside codex
+- [x] Run `bun run typecheck` — passes
+- [x] Run `bun run test` — no new failures compared to baseline
 
 ### Task 8: OllamaAdapter layer — sendTurn with streaming
 
