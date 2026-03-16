@@ -24,10 +24,10 @@ All code changes on branch `ollama-adapter` (create if not exists) in `../t3code
 
 ### Task 5: OllamaAdapter service definition
 
-- [ ] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
-- [ ] Create `apps/server/src/provider/Services/OllamaAdapter.ts` mirroring `CodexAdapter.ts` (use `import * as Ollama` for ollama-specific types)
-- [ ] Run `bun run typecheck` — passes for the services file (no layer yet)
-- [ ] Run `bun run test` — no new failures compared to baseline
+- [x] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
+- [x] Create `apps/server/src/provider/Services/OllamaAdapter.ts` mirroring `CodexAdapter.ts` (use `import * as Ollama` for ollama-specific types)
+- [x] Run `bun run typecheck` — passes for the services file (no layer yet)
+- [x] Run `bun run test` — no new failures compared to baseline
 
 ### Task 6: OllamaAdapter layer — session lifecycle (no chat yet)
 

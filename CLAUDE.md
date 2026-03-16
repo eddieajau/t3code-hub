@@ -28,6 +28,8 @@ Run from `../t3code`:
 ## Package hygiene
 
 Never hand-write package.json. Use npm install / npm pkg set.
+After installing packages in `../t3code`, check `git diff` for unintended
+changes to generated files (e.g. `mockServiceWorker.js`) and reset them.
 
 ## Change review
 
