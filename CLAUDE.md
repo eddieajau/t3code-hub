@@ -49,6 +49,12 @@ Never tick these off — leave them unchecked and list them for the user to conf
 After each step, remind the user which verify steps to run and what to look for,
 based on the specific changes made (not just a copy of the TODO text).
 
+## Ollama provider pattern
+
+Ollama-specific schemas and config live in `packages/contracts/src/ollama.ts`.
+Consuming files use `import * as Ollama from "./ollama"` (namespace import)
+to keep our additions clearly separated from upstream code.
+
 ## Commits
 
 Never commit unless the user explicitly asks. After finishing a step, stop and

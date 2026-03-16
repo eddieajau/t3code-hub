@@ -25,7 +25,7 @@ All code changes on branch `ollama-adapter` (create if not exists) in `../t3code
 ### Task 5: OllamaAdapter service definition
 
 - [ ] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
-- [ ] Create `apps/server/src/provider/Services/OllamaAdapter.ts` mirroring `CodexAdapter.ts`
+- [ ] Create `apps/server/src/provider/Services/OllamaAdapter.ts` mirroring `CodexAdapter.ts` (use `import * as Ollama` for ollama-specific types)
 - [ ] Run `bun run typecheck` — passes for the services file (no layer yet)
 - [ ] Run `bun run test` — no new failures compared to baseline
 
@@ -64,7 +64,7 @@ Implement startSession, stopSession, listSessions, hasSession, stopAll. No sendT
 
 ### Task 9: Manual end-to-end test
 
-- [ ] Verify: start Ollama locally (`ollama serve` + `ollama pull llama3.1`)
+- [ ] Verify: start Ollama locally (`ollama serve` + `ollama pull llama3:8b`)
 - [ ] Verify: start t3code server with `T3CODE_OLLAMA_BASE_URL=http://localhost:11434`
 - [ ] Verify: create a thread with `provider: "ollama"`, send a message, see streaming response in UI
 
