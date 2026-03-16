@@ -53,14 +53,14 @@ Implement startSession, stopSession, listSessions, hasSession, stopAll. No sendT
 
 ### Task 8: OllamaAdapter layer — sendTurn with streaming
 
-- [ ] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
-- [ ] Implement `sendTurn` — append user message, emit turn events, POST to `/api/chat`, stream NDJSON
-- [ ] Each chunk emits `content.delta` with `streamKind: "assistant_text"`
-- [ ] On completion: append assistant message to history, emit `turn.completed` + `session.state.changed`
-- [ ] On error: emit `runtime.error`
-- [ ] Implement `interruptTurn` — abort the fetch via AbortController
-- [ ] Run `bun run typecheck` — passes
-- [ ] Run `bun run test` — no new failures compared to baseline
+- [x] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
+- [x] Implement `sendTurn` — append user message, emit turn events, POST to `/api/chat`, stream NDJSON
+- [x] Each chunk emits `content.delta` with `streamKind: "assistant_text"`
+- [x] On completion: append assistant message to history, emit `turn.completed` + `session.state.changed`
+- [x] On error: emit `runtime.error`
+- [x] Implement `interruptTurn` — abort the fetch via AbortController
+- [x] Run `bun run typecheck` — passes
+- [x] Run `bun run test` — no new failures compared to baseline
 
 ### Task 9: Manual end-to-end test
 
