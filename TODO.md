@@ -33,13 +33,13 @@ All code changes on branch `ollama-adapter` (create if not exists) in `../t3code
 
 Implement startSession, stopSession, listSessions, hasSession, stopAll. No sendTurn yet — just get the skeleton compiling and wired up.
 
-- [ ] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
-- [ ] Create `apps/server/src/provider/Layers/OllamaAdapter.ts` with session map + event queue
-- [ ] Implement `startSession` — create session state, emit `session.started` + `session.state.changed`
-- [ ] Implement `stopSession`, `listSessions`, `hasSession`, `stopAll`
-- [ ] Stub remaining methods (`sendTurn`, `interruptTurn`, `readThread`, `rollbackThread`, `respondToRequest`, `respondToUserInput`)
-- [ ] Run `bun run typecheck` — passes
-- [ ] Run `bun run test` — no new failures compared to baseline
+- [x] Run `bun run typecheck` and `bun run test` baseline and note any pre-existing failures
+- [x] Create `apps/server/src/provider/Layers/OllamaAdapter.ts` with session map + event queue
+- [x] Implement `startSession` — create session state, emit `session.started` + `session.state.changed`
+- [x] Implement `stopSession`, `listSessions`, `hasSession`, `stopAll`
+- [x] Stub remaining methods (`sendTurn`, `interruptTurn`, `readThread`, `rollbackThread`, `respondToRequest`, `respondToUserInput`)
+- [x] Run `bun run typecheck` — passes
+- [x] Run `bun run test` — no new failures compared to baseline
 
 ### Task 7: Wire OllamaAdapter into the server
 
