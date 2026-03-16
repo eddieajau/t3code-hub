@@ -64,9 +64,9 @@ Implement startSession, stopSession, listSessions, hasSession, stopAll. No sendT
 
 ### Task 9: Manual end-to-end test
 
-- [ ] Verify: start Ollama locally (`ollama serve` + `ollama pull llama3:8b`)
-- [ ] Verify: start t3code server with `T3CODE_OLLAMA_BASE_URL=http://localhost:11434`
-- [ ] Verify: create a thread with `provider: "ollama"`, send a message, see streaming response in UI
+- [x] Verify: start Ollama locally (`ollama serve` + `ollama pull llama3:8b`)
+- [x] Verify: start t3code server with `T3CODE_OLLAMA_BASE_URL=http://localhost:11434`
+- [x] Verify: create a thread with `provider: "ollama"`, send a message, see streaming response in UI
 
 ### Task 10: Spike write-up and findings
 
