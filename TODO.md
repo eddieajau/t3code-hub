@@ -70,6 +70,6 @@ Implement startSession, stopSession, listSessions, hasSession, stopAll. No sendT
 
 ### Task 10: Spike write-up and findings
 
-- [ ] Update `docs/spike-ollama.md` with findings, what worked, what didn't
-- [ ] Document tool-use gap analysis
-- [ ] Assess whether a PR to upstream is viable
+- [x] Update `docs/spike-ollama.md` with findings, what worked, what didn't
+- [x] Document tool-use gap analysis
+- [x] Assess whether a PR to upstream is viable
